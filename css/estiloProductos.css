@@ -1,0 +1,34 @@
+.imgProducto{
+	width: 90%;
+	vertical-align: middle;
+	margin-top: 20px;
+	height: 70%;
+}
+.producto{	
+	width: 30%;
+	height: 270px;
+	background-color: gray;
+	text-align: center;
+	margin-left: 10px;
+	float: left;
+	vertical-align: middle;
+}
+.precio{
+	text-align: right;
+	width: 10%
+}
+.titulo{
+	background-color: #6AC5AC;
+}
+#productos section{
+	border: solid  red 10px;
+	height: 300px;	
+	background-color: blue;
+}
+.imgCarrito{
+
+}
+.botonCarrito{
+	width: 15%;
+}
+
