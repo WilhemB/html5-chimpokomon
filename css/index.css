@@ -1,0 +1,101 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/*
+*	GLOBAL
+*/
+html {
+	
+}
+
+body {
+
+}
+
+a.close {
+	background-color: rgb(204,204,204);
+	border-radius: 50%;
+	color: rgb(255,255,255);
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: .8em;
+	padding: .2em .5em;
+	position: absolute;
+	top: 1.25rem;
+	transition: all 400ms ease;
+	right: 1.25rem;
+}
+	
+	a.close:hover {
+		background-color: #3A01DF;
+		cursor: pointer;
+	}
+
+
+div.overlay {
+	background-color: rgba(26, 69, 124, 0.6);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+	div.overlay > div.login-wrapper {
+		align-self: center;
+		background-color: rgba(255, 255, 0, 1);
+		border-radius: 2px;
+		padding: 6px;
+		width: 450px;
+	}
+	
+		div.overlay > div.login-wrapper > div.login-content {
+			background-color: rgb(255,255,255);
+			border-radius: 2px;
+			padding: 24px;	
+			position: relative;
+		}
+		
+			div.overlay > div.login-wrapper > div.login-content > h3 {
+				color: rgb(0,0,0);
+				font-size: 1.8em;
+				margin: 0 0 1.25em;
+				padding: 0;
+			}
+/*
+*	FORM
+*/
+form label {
+	color: rgb(0,0,0);
+	display: block;
+	font-size: 1.25em;
+	margin: .75em 0;	
+}
+	
+form button {
+	background-color: #50c1e9;
+	border: 1px solid rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	font-family: 'Varela Round', sans-serif;
+	font-size: .85em;
+	padding: .55em .9em;
+	transition: all 400ms ease;	
+}
+
+	form button:hover {
+		background-color: #1bc5b3;
+		cursor: pointer;
+	}
+

@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/jquery.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$("#login_link").click(function( event ){
+			event.preventDefault();
+    		$(".overlay").fadeToggle("fast");
+  		});
+
+  		$(".close").click(function(){
+		$(".overlay").fadeToggle("fast");
+		});
+	});
+	</script>
 </head>
 <body>
-	<div>
-		<a href="Iniciar sesión"></a>
-		<a href="Registrarse"></a>
+	<div id="usuarios_bar">
+		<a href="" id="login_link">INICIAR SESI&Oacute;N</a>
+		<a href="">REGISTRARSE</a>
 	</div>
+
+	<!--Codigo html de lo que se oculta en la pantalla principal-->
+	<div class="overlay" style="display:none">
+		<div class="login-wrapper">
+			<div class="login-content">
+				<a class="close">Cerrar</a>
+				<h3>Inicia sesi&oacute;n</h3>
+				<form>
+					<label for="username">
+						Usuario: 
+						<input type="text" name="username" id="username" required/>
+					</label>
+					<label for="password">
+						Contraseña:
+						<input type="password" name="password" id="password" required/>
+					</label>
+					<button type="submit">Aceptar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<nav>
 		<div>
 			<ul id="nav" class="unstyled">
