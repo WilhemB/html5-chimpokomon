@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="estilos/estiloProductos.css">
+<link rel="stylesheet" type="text/css" href="css/estiloProductos.css">
 </head>
 
 <body>
@@ -25,9 +25,14 @@
 			<br>
 			Camisa de Shoe
 			<br>
-			Precio: <input class="precio" type="text" readonly value="$100">
-			<button class="botonCarrito"><img class="imgCarrito" src="imsChinpokomon/carritoNegro.png"></button>
-			<form><input type="text" value="1" required></form>			
+			Precio: <input class="precio" type="text" readonly value="$100">	
+					
+			<form >
+				<input type="number" value="1" required max="120" min="1" onclick="">	
+				<button type="button" class="botonCarrito">
+					<img class="imgCarrito" src="imsChinpokomon/carritoNegro.png" onclick="">
+				</button>			
+			</form>			
 		</div>
 
 		<div class="producto">
@@ -39,7 +44,7 @@
 		</div>
 		<br>		
 	</section>
-
+	<hr>
 	
 	<section id="otros">
 		<span class="titulo">Mas Productos de Chinpokomon!</span>
@@ -63,6 +68,7 @@
 	</section>
 
 </section>
+
 
 </body>
 </html>
